@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container{
+display: grid;
+margin: auto;
+width: 1000px;
+min-height: 50vh;
+grid-template-columns: repeat(3,1fr);
+border:1px solid red;
+gap: 10px 20px;
+} 
+
+
+.grid-items{
+    background-color: aqua;
+    border: 1px solid black;
+    /* height: 50px; */
+}
+
+.item1{
+    /* colums line 1 to line 4 tk */
+    grid-column: 1/4;
+    /* can use like this also */
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+}
+.item2{
+    grid-row: 2/4;
+}
+.item7{
+    grid-column: 1/4;
+}

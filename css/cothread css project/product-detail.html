@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-detail</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+        <h1>ThreadCo</h1>
+        <!-- <p><i> Wear the code.live the street </i> </p> -->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Product detail</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">cart(0)</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <!-- mainly used for nav -->
+        <nav aria-label="breadcrumb">
+            <a href="index.html">home</a>
+            &rsaquo;
+            <a href="products(the catalogue).html">products</a>
+            &rsaquo;
+            Oversized Drop Tee Vol.3
+        </nav>
+        <section id="product-detail">
+
+            <!-- <h3>Oversized Drop Tee vol.3</h3> -->
+            <figure>
+                <img src="images/product 1.jpg" alt="">
+                <figcaption>Oversized Drop Tee vol.3-Black colorway</figcaption>
+            </figure>
+
+            <div class="product-detail-right">
+                <h2>Oversized Drop Tee vol.3</h2>
+                <p>The Vol.3 drops harder than the ones before it. Heavyweight 240 GSM cotton, a chest graphic designed
+                    by
+                    <b> Delhi-based artist Arjun Mehra </b>, and a boxy cut that pairs with everything. <i> This is the
+                        one
+                        everyone is waiting for. </i>
+                </p>
+                <p><strong>&#8377; 799</strong> &nbsp;<s>&#8377; 1199</s>&nbsp; <mark>30% OFF</mark></p>
+               <p> <small>Inclusive of all taxes.Free delivery above &#8377 499</small> </p>
+                <label for="size">Select size:</label>
+                <select id="size" name="size">
+                    <option>choose size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <a href="">size guide</a><br><br>
+                <label for="num"> Quantitiy</label>
+                <input type="number" id="num" name="num"><br><br>
+                <div class="product-btns">
+                <button type="submt">Add to Cart</button>
+                <button type="submit">Buy now</button>
+                </div>
+                <ul>
+                    <li> &#10004; Free delivery on orders above ₹ 499</li>
+                    <li>&#10004; Ships within 48 hoours</li>
+                    <li>&#10004; free return within 7days</li>
+                    <li>&#10004; cash on delivery available</li>
+                </ul>
+            </div>
+        </section>
+        <!-- here the bestseller is attacted here from index to make it easy -->
+        <section id="size-chart"  class="bestsellers">
+            <h2>Size guide</h2>
+            <p>ThreadCo tees run <b> oversized by design </b>. If you prefer a fitted look, size down.</p>
+
+
+            <table>
+                <caption>ThreadCo Oversized Fit — All measurements in inches
+                </caption>
+                <tr>
+                    <th colspan="4">Oversized Drop Tee - Size Chart</th>
+
+
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <th>Chest (inches) </th>
+                    <th>Length (inches) </th>
+                    <th>Shoulder (inches)</th>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>42</td>
+                    <td>28</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>44</td>
+                    <td>29</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>46</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>48</td>
+                    <td>31</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>XXL</td>
+                    <td>50</td>
+                    <td>32</td>
+                    <td>22</td>
+                </tr>
+            </table>
+            <br>
+            <small>Measurements are approximate and may vary by ± 0.5 inches.</small>
+        </section>
+
+        <section id="prod">
+            <h2>Product Details</h2>
+            <dl>
+                <!-- we use div everywhere im dt and dd so that by doing inspect they will not get stick together -->
+                <div>
+            <dt>Material</dt>
+            <dd>100% Cotton - 240 GSM heavyweight</dd>
+            </div>
+            <div>
+            <dt>fit</dt>
+            <dd>Oversized / Boxy cut</dd>
+            </div>
+            <div>
+            <dt>neckline</dt>
+            <dd>Ribbed crew neck</dd>
+            </div>
+            <div>
+            <dt>Colors Available</dt>
+            <dd>Black, White, Washed Grey, Olive</dd>
+            </div>
+            <div>
+            <dt>Care Instructions</dt>
+            <dd>Machine wash cold (30°C), inside out. Do not tumble dry.</dd>
+            </div>
+            <div>
+            <dt>Country of Origin</dt>
+            <dd>Made in India 🇮🇳</dd>
+            </div>
+            <div>
+            <dt>artist</dt>
+            <dd>Graphic by Arjun Mehra, New Delhi</dd>
+            </div>
+            <div>
+            <dt>sku</dt>
+            <dd>TC-OT-VOL3-BLK</dd>
+            </div>
+            </dl>
+        </section>
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <p>4.9/5 &#9733; &#9733; &#9733; &#9733; &#9733; based on 247 reviews</p>
+            <div class="customer-details">
+            <article>
+            <h3>Rahul K. — Delhi</h3>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9733; </p>
+            <p>Bhai yeh tee bahut solid hai. The graphic is fire, quality is exactly what you expect at this price.
+                Already ordered 2 more colors.<i> Highly recommend. </i></p>
+            <small>Purchased: October 12, 2025 | Size: L</small>
+            </article>
+            <article>
+            <h3>Priya S. — Bangalore</h3>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p>Obsessed with this tee. The oversized fit is perfect - not too boxy, not too loose. Wore it to a concert
+                and got <b> three compliments </b> in one night. The fabric is soft and hasn't shrunk after 5 washes.
+            </p>
+            <small>Purchased: October 10, 2025 | Size: M</small>
+            </article>
+            <article>
+            <h3>Aryan M. — Mumbai</h3>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <p>Really good quality for the price. Shipping was fast, delivered in 2 days. Minus one star only because I
+                wish there were more color options. Otherwise <i>absolutely worth it. </i></p>
+            <small>Purchased: October 8, 2025 | Size: XL</small>
+            </article>
+            </div>
+        </section>
+        <section class="like">
+            <h3>You Might Also Like</h3>
+            <!-- never forget to write article -->
+             <div class="like-items">
+           <article>               
+            <figure>
+                <img src="images/product 2.jpg" alt="">
+                <figcaption>Street Hoodie - Olive</figcaption>
+                <h3>Street Hoodie - Olive </h3>
+                <p><b> &#8377; 1499 </b><s>&#8377;1999</s></p>
+                <a href="">view details</a>
+            </figure>
+           </article>
+           <article>
+            <figure>
+                <img src="images/product 3.jpg" alt="">
+                <figcaption>TC 6-Panel Cap - Black</figcaption>
+                <h3>TC 6-Panel Cap - Black</h3>
+                <p><b> &#8377; 499 </b><s>&#8377;699</s></p>
+                <a href="">view details</a>
+            </figure>
+            </article>
+            <article>
+            <figure>
+                <img src="images/product 4.jpg" alt="">
+                <figcaption>Acid Wash Tee - White</figcaption>
+                <h3>Acid Wash Tee - White </h3>
+                <p><b> &#8377; 899 </b><s>&#8377;1299</s></p>
+                <a href="">view details</a>
+            </figure>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2025 ThreadCo. All rights reserved</h3>
+        <p><em>Wear the Code. Live the Street</em></p>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">terms and conditions</a></li>
+                <br>
+                <p id="hr">
+                    <a href="https://instagram.com" target="_blank">instagram</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://twitter.com" target="_blank">twitter</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://youtube.com" target="_blank">you tube</a>
+                </p>
+            </ul>
+        </nav>
+    </footer>
+
+    </footer>
+</body>
+
+</html>

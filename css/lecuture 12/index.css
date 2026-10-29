@@ -1,0 +1,100 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* h1 is a block tag and can follow the block properties */
+/* h1{ */
+    /* border:1px solid red; */
+/* } */
+/* span only take that amount of space which it is needed */
+/* span is a inline ,so it doesn't follow the block properties
+to follow it must use inline-block */
+span{
+    display: inline-block;
+    border:1px solid blue;
+    height: 40px;
+    width: 40px;
+    /* relative unlock the properties for elements
+    like left,right,top,bottom whereas not in static */
+    position: relative;
+    /* left:70px; */
+    /* top:80px; */
+}
+/* yaha cart ki properties bhi lag rahi h */
+p{
+    display:inline-block;
+    background-color: brown;
+    /* text color change */
+    color: aliceblue;
+    width:70px;
+    height: 70px;
+    text-align: center;
+    /* to make its border in circle */
+    border-radius: 50%;
+    font-size: 30px;
+    /* adjust krne k liye so that 10 could come in mid of circle */
+    padding:15px;
+    /* relative unclock kr deta h top,bottom properties ko */
+    /* or esko bana denge absolute and cart wale ko relative */
+    /* absolute se fix ho jayega number */
+    position:absolute;
+    /* 10 ko left ,bottom krne k liye */
+    bottom: 170px;
+    left: 198px;
+    /* border:1px solid black; */
+    /* none=delete from web page
+    hidden=just hidden */
+    /* display: none; */
+    /* visibility:hidden; */
+}
+.box{
+    /* position:absolute; */
+    position: relative; 
+     text-align: center;
+     background-color: chartreuse;
+     
+}
+#wrapper{
+    padding:100px;
+    border:20px solid rgb(235, 53, 165);
+    /* isse border ful  screen pr aa jaataa h */
+    width: 100vw;
+    height: 100vh;
+    /* border k inside aane k liye 
+    by default static to h vaise ye*/
+    /* yaha humne esko fix kr diya */
+    position:relative;
+
+}
+#box3{
+    position:fixed;
+    top:70px;
+    /* or can take right:0px; ,after then can adjust it. */
+    left:1190px;
+}
+#box4{
+    position: relative;
+    left: 20px;
+    z-index: 1;
+    background-color: crimson;
+}
+/* it works on parent such as div is works as parent for this */
+#box2{
+    position: sticky;
+    top: 10px;
+}
+/* for cart ,cart ka parent border h to position relative lag jaayegi*/
+/* by this we can hide the border with the help of z-index */
+.cart{
+    position: relative;
+    border: 1px solid rgb(12, 12, 11);
+    z-index: -1;     
+}
+/* here image is a inline tag and we are able are 
+not able to apply the width or height on inline but 
+in image it is applicable not in span */
+/* img{ */
+    /* width:40px; */
+    /* height: 40px; */
+/* } */

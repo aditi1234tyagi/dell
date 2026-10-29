@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* this wrapper is written for phone type */
+.wrapper{
+    display: flex;
+    /* align item :centre remove krke gap dedete h  ,then background color full screen pr aa jayega,saath me gap bhi */
+    /* align-items: center; */
+    gap: 10px;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2rem;
+    /* phone k liye pehle column then row for tablet, in normal col the img goes down the text but by doing col-reverse
+    the img come up and text goes down*/
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+.wrapper div{
+    background-color: red;
+}
+.wrapper div:first-child{
+    flex:2;
+}
+wrapper div:last-child{
+    flex: 1;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+h1{
+    /* this vw is a view port which increase or decrease according to screen size,but there is a disadvantage that 
+    by decreasing the size of the screen ,the header become even more smaller than text,so we use clamp to fixed it  */
+    /* font-size: 5vw; ,5vw is greater than 40px*/
+    font-size: clamp(2rem,5vw,5rem);     /*imp*/
+}
+
+/* tablet k liye krne k liye pehle phone k liye krna hoga */
+@media (min-width:768px) {      /* 768 se above green color works,768 se above row rahega*/
+    .wrapper{
+        background-color: chartreuse;
+        /* font-size: 3rem; */
+        flex-direction: row;
+    }
+}
+/* laptop, me dekhne k liye flex direction row ,min-width used coz we are making for phone*/
+@media(min-width:992px){      /* 992 se above blue color works,992 se above row rahega*/
+    .wrapper{
+        background-color: aqua;
+        /* font-size: 4rem; */
+        flex-direction: row;
+    }
+}
+
+/* 768,992,1200 */

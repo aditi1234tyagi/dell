@@ -1,0 +1,80 @@
+/* it is used to color the detail written in span tag which is in index.html */
+span{
+    color: chocolate;
+}
+h3{
+    color: chartreuse ;
+}
+/* this work as selector like select karne h "a" ko and and property lagani h color ki and and value choose krna h deeppink  */
+/* here element selector used to prevent from repeatetion */
+li,a{
+    color: deeppink;
+}
+/* here we use class selector,yaaha class ka name use hua h "hello"
+class used when we have to give one property for many elements */
+.hello{
+    color: darkgreen;
+}
+.melody{
+    color: darkslategray;
+}
+/* always use # for id selector */
+#brave{
+color: blue;
+}
+/* universal selector code
+*{ color: orange; 
+*/
+.rohan{
+    color: brown;
+    background-color: cadetblue;
+}
+/* see this */
+/* h1 k liye */
+h1{
+    color: burlywood;
+}
+/* class k liye */
+.rakhi{
+    color: crimson;
+}
+/* id k liye */
+#bhav{
+    color: indigo;
+}
+/* descented combinator */
+p div{
+    color: darkslategray;
+}
+/* child combinator */
+/* but not work due to specifity can try by comment all out */
+div > p{
+    color: violet;
+}
+/* adjacent sibling */
+/* here only doracake should have to change because it is adjacent to a */
+div a+p{
+    color: darkmagenta;
+}
+/* general sibling */
+a ~ p {
+    color: cadetblue;
+}
+/* pseudo code,hover */
+h1:hover{
+    background-color:red;
+}
+/* pseudo element, it adds the element,same as before */
+
+h1::after{
+    content:"shuru kare race";
+}
+h1::before{
+    content:"pehle ye ";
+}
+h1::first-letter{
+    color: chartreuse;
+}
+h1::selection{
+    color: brown; background-color: blueviolet;
+}

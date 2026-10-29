@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+.item{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    /* to make it in sequence */
+    /* display: inline-block; */
+    /* new property apllicable only on item, bachi hue saari jagah le lega */
+    /* flex-grow: 1; */
+    flex-basis: 250px;
+    flex-shrink: 0;
+}
+.container{
+    /* flex by default row me he hota h */
+    display: flex;
+    /* used to make it in row or col */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+     /* flex-direction: column-reverse; */
+     height: 100vh;  
+ border:1px solid red;
+ /* justify content helps to make it in center */
+/* justify-content: center; */
+/* by this end it goes at last and even no's also
+not reverse */
+/* justify-content: end; */
+/* justify-content: space-around; */
+/* justify-content: space-between; */
+/* justify-content: space-evenly; */
+align-items: center;
+/* now you can apply justify center to make it in center */
+justify-content: center;
+ /* align-items: end; */
+ /* align-items: end; */
+ /* to give the gap b/w boxes */
+ gap: 10px;
+ /* its works for many boxes ,to maintain the shape of it*/
+ /* flex-wrap: wrap; */
+ /* flex-wrap: wrap-reverse; */
+ /* it align all the boxes even it have gap */
+ align-content: start;
+ align-content: space-evenly;
+ /* to prevent space between row */
+ align-content: start;
+
+}
+/* doesn't work */
+#card2{
+    /* align-self: flex-end; */
+    /* check here also */
+    /* flex-grow: 1; */
+    /* before checking this shrink ,remove wrap property first */
+    /* flex-shrink: 1; */
+}

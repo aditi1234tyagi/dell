@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+background-color: aqua;
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* animation-name:ronit ; */
+animation-name: raju;
+animation-duration:5s ;
+animation-iteration-count: 3;
+/* helps in color change continuously */
+animation-iteration-count: infinite;
+animation-direction: alternate;
+/* from where it goes it stops */
+animation-fill-mode:forwards;
+/* for absolute position there should be width must be there in raju */
+position: absolute;
+
+}
+@keyframes ronit{
+    from{
+background-color: chartreuse;
+    }
+    to{
+background-color: chocolate;
+transform: translate(30px,50px);
+    }
+}
+
+
+@keyframes raju{
+    0%{
+background-color: blue;
+width: 1000px;
+left: 0%;
+    }
+    25%{
+background-color: brown;
+    }
+    50%{
+background-color: burlywood;
+/* width:500; */
+    }
+    75%{
+background-color: chartreuse;
+/* width: 700; */
+    }
+    100%{
+        /* transform: translate(30px,50px); */
+background-color: cornflowerblue;
+left: 100%;
+    }
+} 

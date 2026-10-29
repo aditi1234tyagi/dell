@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+        p {
+            color: yellowgreen;
+        }
+      
+    </style>
+    <!-- it is necessary to link the html and css together ,so link used,and stylesheet used for css and href for css reference -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- inline css -->
+    <h1 style="color: aqua; background-color: black;">here is the view ,just grab it.....</h1>
+    <!-- by putting <p> tag in style tag it changes the color of all <p> tag -->
+    <p>hello everyone </p>
+    <p>hey! good morning</p>
+    <!-- we can use <span> tag to prevent color -->
+    <span>hey! good morning</span>
+    <h3>apple</h3>
+    <h3>mango</h3>
+    <h3>grapes</h3>
+    <!-- selectors -->
+     <a href="">join now</a>
+     <ul>
+        <li>ball</li>
+        <li>bat</li>
+        <li>cat</li>
+     </ul>
+     <!-- here we will use class selector,in which we give the name of class as hello -->
+     <div></div>
+            <p>doemon</p>
+            <p>gracefully</p>
+            <section>
+                <p>hmm</p>
+            </section>
+        
+      <!-- like example of class -->
+       <h5 class="melody">dekisuki</h5>
+       <h6 class="melody">nobita</h6>
+       <h4 class="melody">giyan</h4>
+       <!-- for id selector -->
+       <p id="brave">arjun</p>
+       <!-- universal selector which apply on each and every before this every tag must be original as starting without color effects -->
+        <h5 class="renu rohan">writing skills</h5>
+        <!-- see this  -->
+         <!-- by this we can say it prefered style in preference -->
+         <h1 class="rakhi" id="bhav" style="color: brown;">avengers</h1> 
+        <!-- descendent combinator -->
+         <!-- its not working due to specifity otherwise all element test color becomes darklategrey -->
+        <div>
+            <p>doemon</p>
+            <p>gracefully</p>
+            <section>
+                <p>hmm</p>
+            </section>
+        </div>
+        <!-- child combinator -->
+         <!-- div me all child color change except grandchild ,who is present in section -->
+         <div>
+            <p>doemon</p>
+            <p>gracefully</p>
+            <section>
+                <p>hmm</p>
+            </section>
+        </div>
+        <!-- adjacent sibling -->
+       <div>
+            <p>doemon</p>
+            <p>gracefully</p>
+            <section>
+                <p>hmm</p>
+            </section>
+        </div>
+     <!-- general sibling -->
+      <!-- all siblings become colored like <p> wale -->
+       <div>
+            <p>doemon</p>
+            <p>gracefully</p>
+            <section>
+                <p>hmm</p>
+            </section>
+        </div>
+</body>
+
+</html>

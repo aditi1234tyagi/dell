@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product catalogue</title>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+    </style>
+        
+        
+    
+</head>
+
+<body>
+    <header>
+        <h1>ThreadCo</h1>
+        <p><em>Wear the Code.Live the Street.</em></p>
+        <nav>
+            <ul>
+                <!-- to make it ready for next page ,we have to add reference -->
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Product Details</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Cart(0)</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h2>The Catalogue</h2>
+            <p1>Fresh drops, every Friday.<strong>Limited stock. No restocks.</strong>Ever.</p1><br>
+            <p1>Showing <strong>8 products</strong></p1>
+            <br>
+        </section>
+        <section>
+            <h2>Filter By</h2>
+            <h3>Category</h3>
+            <ul>
+                <!-- here,li*5>input+label -->
+                <li>
+                    <input type="checkbox" id="t-shirt1">
+                    <label for="t-shirt1">T-Shirts</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="t-shirt2">
+                    <label for="t-shirt2">hoddie</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="t-shirt3">
+                    <label for="t-shirt3">caps</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="t-shirt4">
+                    <label for="t-shirt4">cargo</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="t-shirt5">
+                    <label for="t-shirt5">pants</label>
+                </li>
+            </ul>
+            <h4>Price Range(&#8377;)</h4>
+            <label for="min">MIN:</label>
+            <input type="number" id="min" min="0" placeholder="0">
+            <br>
+            <label for="max">MAX</label>
+            <input type="number" id="max" min="0"  placeholder="5000">
+            <h3>Short By</h3>
+        <select name="sort by" id="sort by">
+            <option value="">most popular</option>
+            <option value="">low to high</option>
+            <option value="">high to low</option>
+            <option value="">newest first</option>
+            
+        </select>
+        <br><br>
+        <button>apply filters</button>
+        <button>clear all</button>
+      </section>
+<section>
+    <h2>all products</h2>
+<article>
+    <figure>
+        <img src="images/product 1.jpg" alt="">
+        <figcaption>oversized drop</figcaption>
+    </figure>
+    <h3>Oversized Drop Tee Vol.3</h3>
+<p>Category: T-Shirts</p>
+<p>Price: <strong> &#8377; 799</strong> <s> &#8377; 1199</s>  </p>
+<p> <mark>30% OFF</mark></p>
+<a href="">view details</a>
+    <button>Add to Cart</button>
+</article>
+<!-- article2 -->
+ <article>
+    <figure>
+        <img src="images/product 1.jpg" alt="">
+        <figcaption>oversized drop</figcaption>
+    </figure>
+    <h3>Oversized Drop Tee Vol.3</h3>
+<p>Category: T-Shirts</p>
+<p>Price: <strong> &#8377; 799</strong> <s> &#8377; 1199</s>  </p>
+<p> <mark>30% OFF</mark></p>
+<a href="">view details</a>
+    <button>Add to Cart</button>
+</article>
+
+<article>
+    <figure>
+        <img src="images/product 1.jpg" alt="">
+        <figcaption>oversized drop</figcaption>
+    </figure>
+    <h3>Oversized Drop Tee Vol.3</h3>
+<p>Category: T-Shirts</p>
+<p>Price: <strong> &#8377; 799</strong> <s> &#8377; 1199</s>  </p>
+<p> <mark>30% OFF</mark></p>
+<a href="">view details</a>
+    <button>Add to Cart</button>
+</article>
+
+<article>
+    <figure>
+        <img src="images/product 1.jpg" alt="">
+        <figcaption>oversized drop</figcaption>
+    </figure>
+    <h3>Oversized Drop Tee Vol.3</h3>
+<p>Category: T-Shirts</p>
+<p>Price: <strong> &#8377; 799</strong> <s> &#8377; 1199</s>  </p>
+<p> <mark>30% OFF</mark></p>
+<a href="">view details</a>
+    <button>Add to Cart</button>
+</article>
+
+<article>
+    <figure>
+        <img src="images/product 1.jpg" alt="">
+        <figcaption>oversized drop</figcaption>
+    </figure>
+    <h3>Oversized Drop Tee Vol.3</h3>
+<p>Category: T-Shirts</p>
+<p>Price: <strong> &#8377; 799</strong> <s> &#8377; 1199</s>  </p>
+<p> <mark>30% OFF</mark></p>
+<a href="">view details</a>
+    <button>Add to Cart</button>
+</article>
+</section>
+
+<h3>compare our best sellers</h3>
+<table>
+    <tr>
+        <th colspan="4">Product Comparison - Top 3 Picks</th>
+        
+        
+        
+    </tr>
+    <tr>
+        <!-- as lines are removing by making <th> tag -->
+      <th>feature</th>
+        <td> <strong>Drop Tee Vol.3</strong></td>
+        <td><strong>Street Hoodie</strong></td>
+        <td><strong>Utility Cargo</strong></td>
+    </tr>
+    <tr>
+        <th rowspan="2">pricing</th>
+        <td>&#8377;799</td>
+        <td>&#8377;1499</td>
+        <td>&#8377;1799</td>
+    </tr>
+    <tr>
+        
+        <td><s>&#8377;1199</s></td>
+        <td><s>&#8377;1999</s></td>
+        <td><s>&#8377;2499</s></td>
+    </tr>
+    <tr>
+        <th>Material</th>
+        <td>100 % cotton</td>
+        <td>80% Cotton, 20% Polyester</td>
+        <td>100% Cotton Twill</td>
+    </tr>
+    <tr>
+        <th>Available sizes</th>
+        <td>S,M,LXL,XXL</td>
+        <td>S,M,L,XL</td>
+        <td>28, 30, 32, 34, 36</td>
+    </tr>
+    <tr>
+        <th>Rating</th>
+        <td>&#9733 &#9733&#9733&#9733&#9733(4.9)</td>
+        <td>&#9733&#9733&#9733&#9733&#9733&#9734(4.7)</td>
+        <td>&#9733&#9733&#9733&#9733&#9733&#9733(4.6)</td>
+    </tr>
+    <tr>
+        <th>Free Delivery</th>
+        <td>Yes (above ₹ 499)</td>
+        <td>Yes (above ₹ 499)</td>
+        <td>Yes (above ₹ 499)</td>
+    </tr>
+    <tr>
+        <th>best for</th>
+        <td>everyday wear</td>
+        <td>winter and layering</td>
+        <td>street and styling</td>
+    </tr>
+</table>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 ThreadCo. All rights reserved</p>
+        <p><em>Wear the Code. Live the Street</em></p>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">terms and conditions</a></li> <br><br>
+                <a href="">instagram</a> | <a href="">twitter</a> | <a href="">you tube</a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* in this font is used as copy paste from google font */
+#aditya {
+    font-family: "Smooch Sans";
+}
+
+#ronit {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+}
+
+
+
+.smooch-sans-<uniquifier> {
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* you can change font size by ctrl space clicking */
+#book {
+    font-size: small;
+}
+
+#novel {
+    font-size: 100px;
+}
+
+p {
+    font-size: larger;
+    font-weight: 900;
+}
+
+/* for font style */
+#adi {
+    font-style: italic;
+}
+
+/*  use normal tag */
+em {
+    font-style: normal;
+}
+
+h4 {
+    font-size: larger;
+    font-variant: small-caps;
+}
+
+/* from here you can change line ki height
+it is usually used to give space between lines */
+#doracake {
+    line-height: 3;
+}
+
+/* usually used to space between letters */
+#sinchan {
+    letter-spacing: 5px;
+}
+
+/* here there is a space between words */
+shut {
+    word-spacing: 100px;
+}
+
+#vikas {
+    text-align: center;
+}
+
+#leviosa {
+    text-decoration: underline dashed;
+}
+
+#capital {
+    text-transform: capitalize;
+}
+
+/* in this line become slightly slide */
+#text {
+    text-indent: 50px;
+}
+
+/* by this we can give shadow as x,y,z and color as well,can give shadow in negative also */
+#shadow {
+    text-shadow: 10px 10px 10px crimson;
+}
+/* color:#0000ff like this write=blue */
+#col{
+    color: aqua;
+color:#0000ff;
+}
+#arey{
+    color: rgb(red, green, blue);
+}
+/* hsl(hue, saturation, lightness);,you can more or less the brightness  */
+/* you can also give background color too */
+#pinku{
+    
+    color: hsl(360 100% 50%);}
+/* hsla(360 100% 50% 0.5) */
+#pinku{
+    background-color:  rgb(60, 153, 60);
+}

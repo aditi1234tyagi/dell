@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* taaki cursor hatane pr amoothly back aaye */
+    /* transition-property: all; */
+    /* when box goes back it work on that box */
+    transition-duration: 1s;
+    /* linear,ease-in :use anything */
+    /* ease-in:here initially speed becomes less later it become more speed */
+    /* transition-timing-function: ease-in; */
+    /* ease-out:initially fast later become normal speed */
+    /* transition-timing-function: ease-out; */
+    /* ease-in-out=starting and ending slow and middle normal */
+    /* transition-delay: 2s; */
+    /* property,duration,timing funtion,delay ,all transition property just comes in one line*/
+    /* transition: all 5s linear 0; */
+    /* transform: translateX(30px); */
+    /* by applying transformy the web only follows the translatey not translate x,so to make it follow both */
+    /* transform: translateY(30px); */
+    /* don't forget (,) */
+    /* transform: scale(30px,30px);
+   transform:scaleX(1.8);
+   transform: scaleY(1.6); */
+}
+
+
+
+
+
+.box:hover {
+    /* quick response */
+    background-color: blueviolet;
+    /* gives response according to duration like 1s,2s,3s,10s;when box comes out it work on it */
+    /* transition-duration: 20s; */
+    /* transition property =works on specific things like
+    width,height,background color,all  */
+    /* transition-property: all;
+    width: 500px; */
+    /* transition-property:background-color; */
+    width: 400px;
+    
+    /* in hover works line 3d outward,make sure to write transition duration to. */
+     transform: translate(100px,100px)  scaleX(2);
+     /* transform: translate(100px,100px); */
+}
+.btn{
+     background-color: rgb(228, 87, 77);
+     border-radius: 30px;
+     margin:50px 50px;
+     border:none;
+     color: black;
+     padding: 20px 20px;
+     transition-duration: 1s;
+     /* transform:skew(40deg) ; */
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px black;
+    transform: translate(0,-10px);
+    transform: rotate(3deg);
+    transform: skew(40deg);
+}

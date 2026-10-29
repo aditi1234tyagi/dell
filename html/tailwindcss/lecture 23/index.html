@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- <h1 class="bg-blue-500 text-sm">hello depanshu</h1>
+    here , (1*4) -->
+    <!-- m-auto works only on block not on inline block -->
+    <p
+        class="text-white text-4xl bg-brand block w-60 h-20 m-auto text-center hover:bg-blue-600 hover:text-black  duration-700 ease-in">
+        helloji</p>
+
+    <!-- <p class="bg-cyan-950 text-4xl italic p-16 m-30  inline">heloo prafull</p>  -->
+    <!-- width does not work on inline so try to make it inline-block, always work as 30*4 ,for m-auto ,remove inline-block,
+     or simply take block,due to input.css we get bg brand as yellow-->
+    <!-- pt=padding from top -->
+    <!-- <h2 class="text-white bg-brand block pt-4 w-60 h-30 text-center m-auto hover:bg-pink-500 hover:text-black duration-300 ease-in">yes ofcourse</h2>    -->
+    <p class="text-2xl text-red-59 italic text-center ">om namah shivaye</p>
+    <div>
+        <!-- these all properties always apply on mobile first -->
+        <section class="bg-slate-400 w-full h-20 flex items-center justify-center md:justify-around">
+            <div>
+                <h1>logo</h1>
+            </div>
+            <!-- by this the text will be hidden -->
+            <div class="hidden md:block">
+                <!-- here the gap is like 2*4,just make a cursor on gap ,you will get the answer,large screen pr jaate he gap ko big kr dena h -->
+                <ul class="flex gap-2 lg:gap-8">
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+<div>
+    <section class="bg-slate-600 h-30 flex gap-8 justify-center items-center w-full md:justify-around">
+        <div>
+            <h1>logos</h1>
+        </div>
+        <div class="hidden md:block">
+            <!-- means lg-gap-8 that large screen pr gap large de dena -->
+            <ul class="flex  gap-2  lg-gap-8 ">
+                <li>about</li>
+                <li>contact</li>
+                <li>us</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+</body>
+
+</html>

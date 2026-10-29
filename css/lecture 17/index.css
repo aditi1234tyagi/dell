@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.grid-container{
+    /* by grid nothing change but by inspect they get some numbering on it */
+display: grid;
+/* width: 50vw; */
+
+/* width:50%; */
+width: 80vw;
+margin: auto;
+/* grid-template-columns: 100px 150px 100px; */
+/* here 30,10,10 does not take the whole 50 % coz they see thmeselves as outside as 100% */
+/* grid-template-columns: 30% 10% 10%; */
+/* just the precnetage  to fill the grid box */
+/* it means we are given three columns */
+/* grid-template-columns: 60% 20% 20%; */
+/* grid-template-columns:repeat(3,1fr); */
+/* autofill is used to fill the remaining column and also helps in wrap too. */
+/* grid-template-columns: repeat(auto-fill,200px); */
+/* can change 200px to 100px,can write auto-fit too */
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+
+/* grid template row row basically used for height ,auto means jitna bhi content hoga utna he size hoga*/
+/* grid-template-rows: auto; */
+/* 200px ,it means just one rows get of 200px */
+/* grid-template-rows: 200px; */
+/* for both rows */
+/* grid-template-rows: 200px 200px; */
+/* can gives in fr form but it mainly depends on parent */
+/* grid-template-rows: 1fr 1fr;            */
+/* and its parent is height */
+/* height: 200px;                          */
+/* you can give any  no. of rows: 1fr 1fr 1fr 1fr */
+/* repeat (no. of rows,size of row) */
+/* grid-template-rows: repeat(10,1fr);
+height:500px; */
+/* by grid auto rows height is remain fixed,even by scrolling */
+/* grid-auto-rows: 300px; */
+/* but only for 4 boxes 300px not work properly and it makes vacant seat */
+grid-auto-rows: minmax(200px,1fr);
+border:1px solid red;
+/* by giving gap it the boxes comes out of border */
+/* gap: 10px; */
+/* row-gap: 10px; */
+/* column-gap: 10px; */
+/* now , gap=10px for row and 10px for columns */
+gap: 10px 10px;
+/* box will not go out from the borders */
+min-height: 50vh;
+
+
+/* #autofill=it is used to fill the columns that are given in the html and works only on first row,
+#autofit=it is used to fill the entire column even just two div classes are given.
+ */
+
+}
+
+
+
+
+.grid-items{
+background-color: aqua;
+border:1px solid black;
+/* remove this height coz we have used template row -auto */
+/* height: 100px;     */
+}

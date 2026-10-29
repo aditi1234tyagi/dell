@@ -1,0 +1,71 @@
+/* h1{
+    background-color: rgb(146, 146, 243);
+} */
+ /* can right left to and right to ,to extend any color */
+ /* can write to top,to bottom,to left,to right */
+ /* can give (red,blue,green,pink) */
+#wrapper{
+    background: linear-gradient(to left, red, blue);
+}
+/* can use: 
+#wrapper{
+background: linear-gradient(45deg,red,blue); 
+height:500px; */
+#wrapper{
+    background: linear-gradient(45deg, red,green,yellow,pink,blue);
+} 
+/* its your choice to write circle or not
+it gives eclipse shape */
+#wrapper{
+    background: radial-gradient(circle,red,green);
+}
+#wrapper{
+    background: conic-gradient(red,blue,green);
+    height:500px;
+}
+#wrapper{
+    
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=);
+    background-repeat: no-repeat;
+border:1px solid black;
+background-position: top;
+height:500px;
+background-size: cover;
+/* can use
+background size:contain; */
+border-width: 20px;
+border-style: solid;
+border-color:teal;
+/* border:2px solid navy; */
+/* by this you are able to see color on left side */
+border-left:1px solid red;
+/* this gives the round shape or can take 20px */
+border-radius: 10%;
+/* it gives the equal space around border */
+padding:40px;
+/* border se bahar ka space and padding hota h and border and content k mid ka space */
+margin: 40px;
+}
+P{
+    border: 1px solid black;
+    padding-left: 40px;
+    /* padding: top right bottom left 
+    padding: 0 40px 0 40px*/
+    /* top,bottom and left,right */
+    /* its a short trick for top,bottom,left,right */
+    padding:0 50px
+    /* top,left/right,bottom */
+}
+#just{
+    border: 1px solid blue;
+    margin: auto;
+    text-align: center;
+}
+/* margin also remove some properties like space between border */
+/* by this you can understand the text align */
+#sinc{
+    border:1px solid brown ;
+    width:100px;
+    margin:auto;
+}
+

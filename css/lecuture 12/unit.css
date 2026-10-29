@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* by this you can check in inspect that 
+the font size remain fixed and this is we say
+it is a absolute unit */
+h2 {
+    font-size: 40px;
+}
+
+/* here wrapper ka parent <body> hai */
+/*  #wrapper {  */
+    /* width: 500px; */
+    /* by this it will squeeze,here chld depend karega parent pr
+    if parent varies then child also varies and vice versa */
+    /* 
+    width: 50%;
+    height: 500vh;
+    background-color: crimson;
+} 
+    */
+
+/* it will not squeeze */
+/*
+ section {
+ */
+    /* width: 250px; */
+    /* height: 250px; */
+    /* here ,width ka parent section hai and section
+    ka parent wrapper hai,jb wrapper ki height kam hogi
+    tabhi to section k height kam hogi,and wrpper ki 
+    height bhi tabh kam hogi jab vo relative hogi,but here
+    wrapper is fixed means as unit fixed(px) and section depends
+    on wrapper */
+    /* therefore not squeeze */
+    /*
+     width: 50%;
+    height: 50%;
+    background-color: aqua;
+} 
+    */
+    /* with the help of (rem) ,we follow the html 
+    coz it works as a parent . */
+html{
+    font-size: 10px;
+}
+    #wrapper{
+        /* font-size: 16px; */
+        font-size: 20px;
+    }
+    p{
+        /* font-size: 4em; */
+        font-size: 4rem;
+    }
+    section{
+        font-size: 4rem;
+    }
